@@ -325,7 +325,7 @@ const Chat = () => {
 					</p>
 
 					{selectedHub && (
-						<div className='mb-8 p-4 bg-gradient-to-r from-green-50/70 to-yellow-50/70 border border-green-200/60 dark:border-white rounded-lg shadow-sm'>
+						<div className='mb-8 p-4 bg-gradient-to-r from-green-50/70 to-yellow-50/70 border border-green-200/60 dark:border-border rounded-lg shadow-sm'>
 							<div className='text-sm text-muted-foreground mb-1'>Contexto Ativo</div>
 							<div className='font-medium text-foreground'>{selectedHub.name}</div>
 							{selectedAgent && <div className='text-sm text-muted-foreground'>{selectedAgent.name}</div>}
@@ -337,7 +337,7 @@ const Chat = () => {
 							<button
 								key={index}
 								onClick={() => setMessage(prompt)}
-								className='p-4 text-left border border-green-200/60 dark:border-white rounded-lg hover:bg-gradient-to-r hover:from-green-50/70 hover:to-yellow-50/70 dark:hover:bg-white dark:hover:text-black transition-all duration-200 shadow-sm hover:shadow-md'
+								className='p-4 text-left border border-green-200/60 dark:border-border rounded-lg hover:bg-gradient-to-r hover:from-green-50/70 hover:to-yellow-50/70 dark:hover:bg-white dark:hover:text-black transition-all duration-200 shadow-sm hover:shadow-md'
 							>
 								<div className='text-sm font-medium mb-1'>{prompt}</div>
 							</button>
@@ -359,7 +359,7 @@ const Chat = () => {
 		>
 			{/* Drag overlay */}
 			{dragOver && (
-				<div className='absolute inset-0 bg-gradient-to-br from-green-500/20 via-yellow-500/15 to-red-500/20 dark:bg-black/80 border-2 border-dashed border-green-500 dark:border-white rounded-lg flex items-center justify-center z-50'>
+				<div className='absolute inset-0 bg-gradient-to-br from-green-500/20 via-yellow-500/15 to-red-500/20 dark:bg-black/80 border-2 border-dashed border-green-500 dark:border-border rounded-lg flex items-center justify-center z-50'>
 					<div className='text-center'>
 						<Paperclip className='w-12 h-12 text-green-500 dark:text-green-300 mx-auto mb-2' />
 						<p className='text-lg font-medium text-green-600 dark:text-green-200'>Solte os arquivos aqui</p>
@@ -405,7 +405,7 @@ const Chat = () => {
 									'max-w-[85%] sm:max-w-[70%] rounded-lg p-3 sm:p-4 relative group',
 									msg.role === 'user'
 										? 'bg-gradient-to-r from-red-500 to-red-600 dark:bg-white dark:text-black text-white shadow-sm'
-										: 'dark:bg-black border border-green-200/60 dark:border-white text-foreground'
+										: 'dark:bg-black border border-green-200/60 dark:border-border text-foreground'
 								)}
 							>
 								<div className='whitespace-pre-wrap text-sm sm:text-base break-words'>{msg.content}</div>
@@ -456,7 +456,7 @@ const Chat = () => {
 						<div className='w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 dark:from-green-400 dark:to-green-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-sm'>
 							<Bot size={16} className='text-white' />
 						</div>
-						<div className='bg-gradient-to-r from-green-50 to-yellow-50 dark:bg-black border border-green-200/60 dark:border-white rounded-lg p-4'>
+						<div className='bg-gradient-to-r from-green-50 to-yellow-50 dark:bg-black border border-green-200/60 dark:border-border rounded-lg p-4'>
 							<div className='flex items-center gap-1'>
 								<div className='w-2 h-2 bg-muted-foreground rounded-full animate-bounce' />
 								<div
@@ -486,7 +486,7 @@ const Chat = () => {
 								{attachedFiles.map((file, index) => (
 									<div
 										key={index}
-										className='flex items-center justify-between p-2 bg-background dark:bg-black rounded border dark:border-white'
+										className='flex items-center justify-between p-2 bg-background dark:bg-black rounded border dark:border-border'
 									>
 										<div className='flex items-center gap-2'>
 											{file.type.startsWith('image/') ? (
@@ -509,7 +509,7 @@ const Chat = () => {
 						</div>
 					)}
 
-					<div className='flex items-end gap-2 sm:gap-3 bg-gradient-to-r dark:from-inherit dark:via-inherit from-yellow-50/70 via-green-50/50 to-red-50/70 dark:bg-black border border-yellow-200/60 dark:border-white rounded-lg p-2 sm:p-3 shadow-sm'>
+					<div className='flex items-end gap-2 sm:gap-3 bg-gradient-to-r dark:from-inherit dark:via-inherit from-yellow-50/70 via-green-50/50 to-red-50/70 dark:bg-black border border-yellow-200/60 dark:border-border rounded-lg p-2 sm:p-3 shadow-sm'>
 						<input
 							ref={fileInputRef}
 							type='file'

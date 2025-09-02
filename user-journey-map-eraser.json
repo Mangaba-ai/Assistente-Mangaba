@@ -1,0 +1,317 @@
+{
+  "userJourneyMap": {
+    "platform": "Eraser",
+    "version": "1.0",
+    "createdAt": "2025-01-12",
+    "description": "Mapa de jornada do usuário para a plataforma Eraser - Sistema de assistente de IA empresarial",
+    "personas": [
+      {
+        "id": "business-user",
+        "name": "Usuário Empresarial",
+        "description": "Profissional que busca assistência de IA para tarefas específicas do negócio",
+        "goals": [
+          "Obter respostas especializadas para sua área de atuação",
+          "Aumentar produtividade nas tarefas diárias",
+          "Acessar conhecimento especializado rapidamente"
+        ],
+        "painPoints": [
+          "Dificuldade em encontrar informações específicas",
+          "Perda de tempo com pesquisas manuais",
+          "Falta de expertise em certas áreas"
+        ]
+      },
+      {
+        "id": "admin-user",
+        "name": "Administrador",
+        "description": "Responsável por configurar e gerenciar a plataforma",
+        "goals": [
+          "Configurar hubs e agentes adequados",
+          "Monitorar uso da plataforma",
+          "Garantir segurança e compliance"
+        ],
+        "painPoints": [
+          "Complexidade na configuração inicial",
+          "Dificuldade em monitorar performance",
+          "Necessidade de treinamento da equipe"
+        ]
+      }
+    ],
+    "journeyStages": [
+      {
+        "stage": "Descoberta",
+        "description": "Usuário descobre a plataforma Eraser",
+        "touchpoints": [
+          {
+            "id": "landing-page",
+            "name": "Página de Landing",
+            "description": "Primeira impressão da plataforma",
+            "userActions": [
+              "Visualiza benefícios da plataforma",
+              "Entende o conceito de hubs e agentes",
+              "Avalia se atende suas necessidades"
+            ],
+            "emotions": ["curiosidade", "interesse", "ceticismo"],
+            "painPoints": [
+              "Informações técnicas complexas",
+              "Falta de exemplos práticos"
+            ],
+            "opportunities": [
+              "Demonstrações interativas",
+              "Casos de uso específicos por setor",
+              "Vídeos explicativos"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "Onboarding",
+        "description": "Processo de integração inicial",
+        "touchpoints": [
+          {
+            "id": "welcome-screen",
+            "name": "Tela de Boas-vindas",
+            "description": "Primeira interação após login",
+            "userActions": [
+              "Cria conta ou faz login",
+              "Visualiza tutorial inicial",
+              "Configura preferências básicas"
+            ],
+            "emotions": ["expectativa", "ansiedade", "esperança"],
+            "painPoints": [
+              "Processo de registro longo",
+              "Muitas opções de configuração"
+            ],
+            "opportunities": [
+              "Onboarding progressivo",
+              "Configuração automática inteligente",
+              "Tour guiado interativo"
+            ]
+          },
+          {
+            "id": "hub-selection",
+            "name": "Seleção de Hub",
+            "description": "Escolha do hub mais adequado",
+            "userActions": [
+              "Explora hubs disponíveis",
+              "Lê descrições de cada área",
+              "Seleciona hub principal"
+            ],
+            "emotions": ["confusão", "decisão", "confiança"],
+            "painPoints": [
+              "Muitas opções disponíveis",
+              "Descrições pouco claras"
+            ],
+            "opportunities": [
+              "Recomendação baseada no perfil",
+              "Preview de funcionalidades",
+              "Possibilidade de testar antes de escolher"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "Primeiro Uso",
+        "description": "Primeiras interações com a plataforma",
+        "touchpoints": [
+          {
+            "id": "agent-selection",
+            "name": "Seleção de Agente",
+            "description": "Escolha do agente especializado",
+            "userActions": [
+              "Visualiza agentes disponíveis no hub",
+              "Lê capacidades de cada agente",
+              "Seleciona agente mais adequado"
+            ],
+            "emotions": ["curiosidade", "expectativa", "incerteza"],
+            "painPoints": [
+              "Diferenças entre agentes não claras",
+              "Falta de exemplos de uso"
+            ],
+            "opportunities": [
+              "Demonstrações de cada agente",
+              "Casos de uso específicos",
+              "Recomendações inteligentes"
+            ]
+          },
+          {
+            "id": "first-chat",
+            "name": "Primeira Conversa",
+            "description": "Primeira interação com o agente",
+            "userActions": [
+              "Digita primeira pergunta",
+              "Avalia qualidade da resposta",
+              "Testa diferentes tipos de perguntas"
+            ],
+            "emotions": ["nervosismo", "surpresa", "satisfação"],
+            "painPoints": [
+              "Não sabe como formular perguntas",
+              "Respostas genéricas",
+              "Tempo de resposta lento"
+            ],
+            "opportunities": [
+              "Sugestões de perguntas",
+              "Prompts pré-definidos",
+              "Feedback em tempo real"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "Uso Regular",
+        "description": "Utilização contínua da plataforma",
+        "touchpoints": [
+          {
+            "id": "daily-interactions",
+            "name": "Interações Diárias",
+            "description": "Uso rotineiro da plataforma",
+            "userActions": [
+              "Acessa conversas anteriores",
+              "Inicia novas conversas",
+              "Alterna entre diferentes agentes",
+              "Organiza histórico de conversas"
+            ],
+            "emotions": ["confiança", "produtividade", "satisfação"],
+            "painPoints": [
+              "Dificuldade em encontrar conversas antigas",
+              "Falta de organização",
+              "Repetição de contexto"
+            ],
+            "opportunities": [
+              "Busca avançada",
+              "Tags e categorização",
+              "Continuidade de contexto",
+              "Favoritos e bookmarks"
+            ]
+          },
+          {
+            "id": "advanced-features",
+            "name": "Recursos Avançados",
+            "description": "Exploração de funcionalidades avançadas",
+            "userActions": [
+              "Personaliza configurações",
+              "Explora diferentes hubs",
+              "Compartilha conversas",
+              "Exporta dados"
+            ],
+            "emotions": ["descoberta", "empoderamento", "expertise"],
+            "painPoints": [
+              "Recursos escondidos",
+              "Falta de documentação",
+              "Configurações complexas"
+            ],
+            "opportunities": [
+              "Dicas contextuais",
+              "Tutoriais avançados",
+              "Comunidade de usuários"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "Mastery",
+        "description": "Domínio completo da plataforma",
+        "touchpoints": [
+          {
+            "id": "power-user",
+            "name": "Usuário Avançado",
+            "description": "Utilização expert da plataforma",
+            "userActions": [
+              "Cria workflows personalizados",
+              "Treina agentes customizados",
+              "Integra com outras ferramentas",
+              "Mentora outros usuários"
+            ],
+            "emotions": ["maestria", "liderança", "inovação"],
+            "painPoints": [
+              "Limitações da plataforma",
+              "Falta de APIs avançadas",
+              "Necessidade de customização"
+            ],
+            "opportunities": [
+              "APIs robustas",
+              "Marketplace de agentes",
+              "Programa de embaixadores",
+              "Feedback direto para desenvolvimento"
+            ]
+          }
+        ]
+      }
+    ],
+    "metrics": {
+      "acquisition": [
+        "Taxa de conversão da landing page",
+        "Tempo até primeiro login",
+        "Origem dos usuários"
+      ],
+      "activation": [
+        "Taxa de conclusão do onboarding",
+        "Tempo até primeira conversa",
+        "Número de hubs explorados"
+      ],
+      "retention": [
+        "Frequência de uso semanal",
+        "Número de conversas por sessão",
+        "Taxa de retorno em 7 dias"
+      ],
+      "engagement": [
+        "Duração média das sessões",
+        "Número de agentes utilizados",
+        "Profundidade das conversas"
+      ],
+      "satisfaction": [
+        "NPS (Net Promoter Score)",
+        "Avaliação das respostas",
+        "Taxa de resolução de problemas"
+      ]
+    },
+    "improvementAreas": [
+      {
+        "area": "Onboarding",
+        "priority": "high",
+        "description": "Simplificar processo inicial e reduzir tempo até valor",
+        "actions": [
+          "Implementar onboarding progressivo",
+          "Criar tour interativo",
+          "Adicionar configuração automática"
+        ]
+      },
+      {
+        "area": "Discovery",
+        "priority": "medium",
+        "description": "Melhorar descoberta de funcionalidades",
+        "actions": [
+          "Adicionar dicas contextuais",
+          "Criar centro de ajuda",
+          "Implementar busca inteligente"
+        ]
+      },
+      {
+        "area": "Personalization",
+        "priority": "high",
+        "description": "Aumentar personalização da experiência",
+        "actions": [
+          "Implementar recomendações IA",
+          "Permitir customização de interface",
+          "Criar perfis de uso"
+        ]
+      }
+    ],
+    "technicalRequirements": [
+      {
+        "requirement": "Performance",
+        "description": "Respostas rápidas e interface fluida",
+        "metrics": ["Tempo de resposta < 2s", "Loading time < 1s"]
+      },
+      {
+        "requirement": "Accessibility",
+        "description": "Plataforma acessível para todos os usuários",
+        "metrics": ["WCAG 2.1 AA compliance", "Suporte a screen readers"]
+      },
+      {
+        "requirement": "Security",
+        "description": "Proteção de dados e privacidade",
+        "metrics": ["Criptografia end-to-end", "Compliance LGPD/GDPR"]
+      }
+    ]
+  }
+}

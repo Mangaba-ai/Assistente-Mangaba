@@ -1,0 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  /* Light mode - Exatamente como ChatGPT */
+  --background: 0 0% 100%;        /* #FFFFFF - Fundo branco puro */
+  --foreground: 0 0% 13%;         /* #212121 - Texto principal escuro */
+  --card: 0 0% 100%;              /* #FFFFFF - Cards brancos */
+  --card-foreground: 0 0% 13%;    /* #212121 - Texto dos cards */
+  --popover: 0 0% 100%;           /* #FFFFFF - Popovers brancos */
+  --popover-foreground: 0 0% 13%; /* #212121 - Texto dos popovers */
+  --primary: 0 0% 13%;            /* #212121 - Cor primária */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF - Texto sobre primária */
+  --secondary: 0 0% 97%;          /* #F7F7F8 - Sidebar ChatGPT */
+  --secondary-foreground: 0 0% 13%; /* #212121 - Texto secundário */
+  --muted: 0 0% 97%;              /* #F7F7F8 - Elementos sutis */
+  --muted-foreground: 0 0% 45%;   /* #737373 - Texto sutil */
+  --accent: 0 0% 94%;             /* #F0F0F0 - Elementos destacados */
+  --accent-foreground: 0 0% 13%;  /* #212121 - Texto sobre accent */
+  --destructive: 0 84% 60%;       /* Vermelho para erros */
+  --destructive-foreground: 0 0% 98%; /* Texto sobre destructive */
+  --border: 0 0% 90%;             /* #E5E5E5 - Bordas sutis */
+  --input: 0 0% 97%;              /* #F7F7F8 - Inputs */
+  --ring: 0 0% 13%;               /* #212121 - Focus ring */
+  --radius: 0.5rem;
+  /* Success, Warning, Error */
+  --success: 142 71% 45%;
+  --success-foreground: 0 0% 98%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 98%;
+  --error: 0 84% 60%;
+  --error-foreground: 0 0% 98%;
+  --success-subtle: 120 30% 95%;
+  --warning-subtle: 45 50% 95%;
+  --error-subtle: 0 30% 95%;
+}
+
+.dark {
+  /* Dark mode - Exatamente como ChatGPT */
+  --background: 0 0% 8%;          /* #141414 - Fundo escuro principal */
+  --foreground: 0 0% 95%;         /* #F2F2F2 - Texto principal claro */
+  --card: 0 0% 10%;               /* #1A1A1A - Cards escuros */
+  --card-foreground: 0 0% 95%;    /* #F2F2F2 - Texto dos cards */
+  --popover: 0 0% 10%;            /* #1A1A1A - Popovers escuros */
+  --popover-foreground: 0 0% 95%; /* #F2F2F2 - Texto dos popovers */
+  --primary: 0 0% 95%;            /* #F2F2F2 - Cor primária clara */
+  --primary-foreground: 0 0% 8%;  /* #141414 - Texto sobre primária */
+  --secondary: 0 0% 10%;          /* #1A1A1A - Sidebar escura */
+  --secondary-foreground: 0 0% 95%; /* #F2F2F2 - Texto secundário */
+  --muted: 0 0% 10%;              /* #1A1A1A - Elementos sutis */
+  --muted-foreground: 0 0% 65%;   /* #A6A6A6 - Texto sutil */
+  --accent: 0 0% 16%;             /* #2A2A2A - Elementos destacados */
+  --accent-foreground: 0 0% 95%;  /* #F2F2F2 - Texto sobre accent */
+  --destructive: 0 84% 60%;       /* Vermelho para erros */
+  --destructive-foreground: 0 0% 95%; /* Texto sobre destructive */
+  --border: 0 0% 16%;             /* #2A2A2A - Bordas escuras */
+  --input: 0 0% 10%;              /* #1A1A1A - Inputs escuros */
+  --ring: 0 0% 95%;               /* #F2F2F2 - Focus ring claro */
+  /* Success, Warning, Error */
+  --success: 142 71% 45%;
+  --success-foreground: 0 0% 8%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 8%;
+  --error: 0 84% 60%;
+  --error-foreground: 0 0% 95%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.text-warning {
+  color: hsl(var(--warning));
+}

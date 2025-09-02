@@ -1,0 +1,10 @@
+// Componentes relacionados aos hubs
+export { default as HubSelector } from '../HubSelector'
+export { default as HubCard } from './HubCard'
+export { default as HubForm } from './HubForm'
+export { default as HubList } from './HubList'
+export { default as HubDetails } from './HubDetails'
+export { default as HubSettings } from './HubSettings'
+export { default as AgentCard } from './AgentCard'
+export { default as AgentForm } from './AgentForm'
+export { default as AgentList } from './AgentList'

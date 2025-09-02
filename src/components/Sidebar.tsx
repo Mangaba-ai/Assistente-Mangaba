@@ -16,7 +16,8 @@ import {
   LogIn,
   LogOut,
   Menu,
-  X
+  X,
+  GitBranch
 } from 'lucide-react'
 import { useChatStore } from '../stores/chatStore'
 import { useThemeStore } from '../stores/themeStore'
@@ -178,6 +179,24 @@ const Sidebar = () => {
         <div className="p-3 sm:p-4 border-b border-border bg-background">
           <HubSelector isCollapsed={isCollapsed} />
         </div>
+        
+        {/* Navigation */}
+        {!isCollapsed && (
+          <div className="p-3 sm:p-4 border-b border-border">
+            <h3 className="text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">
+              Ferramentas
+            </h3>
+            <div className="space-y-1">
+              <Link
+                to="/app/user-journey"
+                className="w-full flex items-center gap-3 p-2 rounded-lg hover:bg-accent transition-all duration-200 text-sm border border-transparent hover:border-border"
+              >
+                <GitBranch size={16} className="text-muted-foreground" />
+                <span className="truncate">Jornada do Usuário</span>
+              </Link>
+            </div>
+          </div>
+        )}
         
         {/* Search */}
         {!isCollapsed && (

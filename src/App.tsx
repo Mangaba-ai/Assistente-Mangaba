@@ -5,7 +5,7 @@ import { AuthProvider } from './contexts/AuthContext'
 import WelcomeScreen from './components/auth/WelcomeScreen'
 import ProtectedRoute from './components/auth/ProtectedRoute'
 import Layout from './components/layout/Layout'
-import { Hubs, Chat } from './pages'
+import { Hubs, Chat, UserJourney } from './pages'
 import './index.css'
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
             <Route index element={<Hubs />} />
             <Route path="dashboard" element={<Hubs />} />
             <Route path="chat" element={<Chat />} />
+            <Route path="user-journey" element={<UserJourney />} />
           </Route>
         </Routes>
         <Toaster

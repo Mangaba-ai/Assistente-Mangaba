@@ -7,6 +7,47 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Paleta oficial Mangaba (mangaba.ia.br)
+        mangaba: {
+          50: '#FFF8F5',
+          100: '#FFF4ED',
+          200: '#FFDAC2',
+          300: '#FAE4BE',
+          400: '#FF9C24',
+          500: '#F97518',
+          600: '#E65F00',
+          700: '#C25B11',
+          800: '#8F420D',
+          900: '#402B22',
+          950: '#1E0D01',
+        },
+        // Remapeia azul/índigo (acentos legados) para a paleta Mangaba
+        blue: {
+          50: '#FFF8F5',
+          100: '#FFF4ED',
+          200: '#FFDAC2',
+          300: '#EDC580',
+          400: '#FF9C24',
+          500: '#F97518',
+          600: '#E65F00',
+          700: '#C25B11',
+          800: '#8F420D',
+          900: '#6B330B',
+          950: '#401D05',
+        },
+        indigo: {
+          50: '#FFF8F5',
+          100: '#FFF4ED',
+          200: '#FFDAC2',
+          300: '#EDC580',
+          400: '#FF9C24',
+          500: '#F97518',
+          600: '#E65F00',
+          700: '#C25B11',
+          800: '#8F420D',
+          900: '#6B330B',
+          950: '#401D05',
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -71,7 +112,7 @@ module.exports = {
         },
       },
        fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Open Sans', 'Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

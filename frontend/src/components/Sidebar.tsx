@@ -137,9 +137,16 @@ const Sidebar = () => {
         <div className="p-3 sm:p-4 border-b border-border bg-background">
           <div className="flex items-center justify-between mb-4">
             {!isCollapsed && (
-              <h1 className="text-xl font-bold text-foreground">
-                Mangaba AI
-              </h1>
+              <div className="flex items-center gap-2">
+                <img
+                  src="/mangaba-logo.svg"
+                  alt="Mangaba"
+                  className="w-8 h-8 rounded-lg"
+                />
+                <h1 className="text-xl font-bold text-foreground">
+                  Mangaba AI
+                </h1>
+              </div>
             )}
             <div className="flex items-center gap-2">
               <button

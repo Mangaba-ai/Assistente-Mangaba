@@ -3,26 +3,26 @@
 @import 'tailwindcss/utilities';
 
 :root {
-  /* Light mode - Exatamente como ChatGPT */
-  --background: 0 0% 100%;        /* #FFFFFF - Fundo branco puro */
-  --foreground: 0 0% 13%;         /* #212121 - Texto principal escuro */
-  --card: 0 0% 100%;              /* #FFFFFF - Cards brancos */
-  --card-foreground: 0 0% 13%;    /* #212121 - Texto dos cards */
-  --popover: 0 0% 100%;           /* #FFFFFF - Popovers brancos */
-  --popover-foreground: 0 0% 13%; /* #212121 - Texto dos popovers */
-  --primary: 0 0% 13%;            /* #212121 - Cor primária */
+  /* Light mode - Paleta oficial Mangaba (mangaba.ia.br) */
+  --background: 18 100% 98%;      /* #FFF8F5 - Fundo creme claro */
+  --foreground: 25 94% 6%;        /* #1E0D01 - Texto marrom-café */
+  --card: 23 100% 96%;            /* #FFF4ED - Cards creme */
+  --card-foreground: 25 94% 6%;   /* #1E0D01 - Texto dos cards */
+  --popover: 23 100% 96%;         /* #FFF4ED - Popovers creme */
+  --popover-foreground: 25 94% 6%; /* #1E0D01 - Texto dos popovers */
+  --primary: 25 95% 54%;          /* #F97518 - Laranja Mangaba */
   --primary-foreground: 0 0% 100%; /* #FFFFFF - Texto sobre primária */
-  --secondary: 0 0% 97%;          /* #F7F7F8 - Sidebar ChatGPT */
-  --secondary-foreground: 0 0% 13%; /* #212121 - Texto secundário */
-  --muted: 0 0% 97%;              /* #F7F7F8 - Elementos sutis */
-  --muted-foreground: 0 0% 45%;   /* #737373 - Texto sutil */
-  --accent: 0 0% 94%;             /* #F0F0F0 - Elementos destacados */
-  --accent-foreground: 0 0% 13%;  /* #212121 - Texto sobre accent */
+  --secondary: 23 100% 96%;       /* #FFF4ED - Sidebar creme */
+  --secondary-foreground: 18 31% 19%; /* #402B22 - Texto secundário */
+  --muted: 23 100% 96%;           /* #FFF4ED - Elementos sutis */
+  --muted-foreground: 18 31% 19%; /* #402B22 - Texto sutil */
+  --accent: 38 86% 86%;           /* #FAE4BE - Destaque suave */
+  --accent-foreground: 25 94% 6%; /* #1E0D01 - Texto sobre accent */
   --destructive: 0 84% 60%;       /* Vermelho para erros */
   --destructive-foreground: 0 0% 98%; /* Texto sobre destructive */
-  --border: 0 0% 90%;             /* #E5E5E5 - Bordas sutis */
-  --input: 0 0% 97%;              /* #F7F7F8 - Inputs */
-  --ring: 0 0% 13%;               /* #212121 - Focus ring */
+  --border: 24 100% 88%;          /* #FFDAC2 - Bordas creme */
+  --input: 23 100% 96%;           /* #FFF4ED - Inputs */
+  --ring: 25 95% 54%;             /* #F97518 - Focus ring laranja */
   --radius: 0.5rem;
   /* Success, Warning, Error */
   --success: 142 71% 45%;
@@ -44,19 +44,19 @@
   --card-foreground: 0 0% 95%;    /* #F2F2F2 - Texto dos cards */
   --popover: 0 0% 10%;            /* #1A1A1A - Popovers escuros */
   --popover-foreground: 0 0% 95%; /* #F2F2F2 - Texto dos popovers */
-  --primary: 0 0% 95%;            /* #F2F2F2 - Cor primária clara */
-  --primary-foreground: 0 0% 8%;  /* #141414 - Texto sobre primária */
+  --primary: 25 95% 54%;          /* #F97518 - Laranja Mangaba */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF - Texto sobre primária */
   --secondary: 0 0% 10%;          /* #1A1A1A - Sidebar escura */
   --secondary-foreground: 0 0% 95%; /* #F2F2F2 - Texto secundário */
   --muted: 0 0% 10%;              /* #1A1A1A - Elementos sutis */
   --muted-foreground: 0 0% 65%;   /* #A6A6A6 - Texto sutil */
-  --accent: 0 0% 16%;             /* #2A2A2A - Elementos destacados */
-  --accent-foreground: 0 0% 95%;  /* #F2F2F2 - Texto sobre accent */
+  --accent: 25 84% 18%;           /* Marrom-laranja escuro - destaque */
+  --accent-foreground: 33 100% 90%; /* Creme claro - texto sobre accent */
   --destructive: 0 84% 60%;       /* Vermelho para erros */
   --destructive-foreground: 0 0% 95%; /* Texto sobre destructive */
   --border: 0 0% 16%;             /* #2A2A2A - Bordas escuras */
   --input: 0 0% 10%;              /* #1A1A1A - Inputs escuros */
-  --ring: 0 0% 95%;               /* #F2F2F2 - Focus ring claro */
+  --ring: 25 95% 54%;             /* #F97518 - Focus ring laranja */
   /* Success, Warning, Error */
   --success: 142 71% 45%;
   --success-foreground: 0 0% 8%;
@@ -69,7 +69,7 @@
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: Inter, system-ui, sans-serif;
+  font-family: 'Open Sans', Inter, system-ui, sans-serif;
 }
 
 .scrollbar-hide {

@@ -7,7 +7,7 @@ export const COLOR_OPTIONS: ColorOption[] = [
   { name: 'neutral', class: 'bg-neutral-500', hex: '#737373' },
   { name: 'stone', class: 'bg-stone-500', hex: '#78716C' },
   { name: 'red', class: 'bg-red-500', hex: '#EF4444' },
-  { name: 'orange', class: 'bg-orange-500', hex: '#F97316' },
+  { name: 'orange', class: 'bg-orange-500', hex: '#F97518' },
   { name: 'amber', class: 'bg-amber-500', hex: '#F59E0B' },
   { name: 'yellow', class: 'bg-yellow-500', hex: '#EAB308' },
   { name: 'lime', class: 'bg-lime-500', hex: '#84CC16' },
@@ -25,19 +25,19 @@ export const COLOR_OPTIONS: ColorOption[] = [
   { name: 'rose', class: 'bg-rose-500', hex: '#F43F5E' }
 ]
 
-export const DEFAULT_COLOR = 'blue'
+export const DEFAULT_COLOR = 'orange'
 
 export const THEME_COLORS = {
   light: {
-    background: '#FFFFFF',    // Fundo branco puro - exato ChatGPT
-    sidebar: '#F7F7F8',      // Sidebar cinza claro - exato ChatGPT
-    card: '#FFFFFF',         // Cards brancos - exato ChatGPT
-    border: '#E5E5E5',       // Bordas sutis - exato ChatGPT
-    text: '#212121',         // Texto principal escuro - exato ChatGPT
-    textSecondary: '#737373', // Texto secundário - exato ChatGPT
-    accent: '#F0F0F0',       // Elementos destacados - exato ChatGPT
-    hover: '#F7F7F8',        // Hover states - exato ChatGPT
-    input: '#F7F7F8'         // Inputs - exato ChatGPT
+    background: '#FFF8F5',    // Fundo creme claro - paleta Mangaba
+    sidebar: '#FFF4ED',      // Sidebar creme - paleta Mangaba
+    card: '#FFF4ED',         // Cards creme - paleta Mangaba
+    border: '#FFDAC2',       // Bordas creme - paleta Mangaba
+    text: '#1E0D01',         // Texto marrom-café - paleta Mangaba
+    textSecondary: '#402B22', // Texto secundário - paleta Mangaba
+    accent: '#FAE4BE',       // Destaque suave - paleta Mangaba
+    hover: '#FFF4ED',        // Hover states - paleta Mangaba
+    input: '#FFF4ED'         // Inputs - paleta Mangaba
   },
   dark: {
     background: '#141414',    // Fundo escuro principal - exato ChatGPT
